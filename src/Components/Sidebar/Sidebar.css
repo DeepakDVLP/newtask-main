@@ -1,0 +1,121 @@
+#sidebar {
+  background: linear-gradient(
+    45deg
+    , #6200ea, #1976d2) !important;
+  grid-area: sidebar !important;
+  overflow-y: auto !important;
+  padding: 20px;
+  transition: all 0.5s;
+}
+
+.sidebar__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* color: #f3f4f6; */
+  color: #ffc700;
+  margin-bottom: 30px;
+}
+
+.sidebar__img {
+  display: flex;
+
+  align-items: center;
+}
+
+.sidebar__title > div > img {
+  width: 20px;
+  object-fit: contain;
+}
+
+.sidebar__title > div > h1 {
+  font-size: 18px;
+  display: inline;
+}
+
+.sidebar__title > #sidebarIcon {
+  font-size: 18px;
+  display: none;
+}
+
+.sidebar__menu > h2 {
+  /* color: #3ea175; */
+  color: #ffc700;
+  font-size: 16px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  padding: 0 10px;
+  font-weight: 700;
+}
+
+.sidebar__link {
+  /* color: #f3f4f6 !important; */
+  color: #fff;
+  padding: 10px;
+  border-radius: 3px;
+  margin-bottom: 5px;
+}
+.active__menu--link {
+  background: rgba(193, 196, 68, 0.3);
+  /* color: #3ea175; */
+  color: #ffc700;
+}
+
+.active__menu--link a {
+  /* color: #3ea175 !important; */
+  color: #ffc700 !important;
+}
+
+.sidebar__link > a {
+  text-decoration: none;
+  /* color: #a5aaad; */
+  color: #fff;
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.sidebar__link > .sidebar__icon {
+  margin-right: 10px;
+  font-size: 23px;
+}
+
+.sidebar__logout {
+  margin-top: 20px;
+  padding: 10px;
+  color: #fff;
+}
+.sidebar__logout > a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.sidebar__logout > .sidebar__icon {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.sidebar_responsive {
+  width: 50%;
+  height: 100%;
+  display: inline !important;
+  z-index: 999 !important;
+  left: 0 !important;
+  position: absolute;
+}
+
+@media only screen and (max-width: 978px) {
+  #sidebar {
+    display: none;
+  }
+  .sidebar__title > #sidebarIcon {
+    display: inline;
+  }
+}
+
+/* @media only screen and (max-width: 500px){
+    .sidebar_responsive{
+      width: 70%;
+    }
+  } */
